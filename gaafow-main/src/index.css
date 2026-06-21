@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Theme colors from style metadata */
+  --color-primary: #00236f;
+  --color-primary-container: #1e3a8a;
+  --color-on-primary: #ffffff;
+  --color-secondary: #855300;
+  --color-secondary-container: #fea619;
+  --color-on-secondary-container: #684000;
+  --color-surface: #f8f9ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #444651;
+  --color-outline: #757682;
+  --color-outline-variant: #c5c5d3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+.glass-header {
+  background: rgba(248, 249, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
